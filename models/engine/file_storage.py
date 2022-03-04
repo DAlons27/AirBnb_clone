@@ -39,7 +39,7 @@ class FileStorage:
     def reload(self):
         """Deserialization"""
         try:
-            if os.stat(self.__file_path).st_size = 0:
+            if os.stat(self.__file_path).st_size == 0:
                 raise EOFError()
             with open(self.__file_path, 'r', encoding='UTF-8') as fp:
                 obj = json.load(fp)
