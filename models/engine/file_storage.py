@@ -43,7 +43,7 @@ class FileStorage:
                 raise EOFError()
             with open(self.__file_path, 'r', encoding='UTF-8') as fp:
                 obj = json.load(fp)
-        except FileNotFounError:
+        except FileNotFoundError:
             pass
         except EOFError:
             pass
