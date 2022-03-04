@@ -25,7 +25,7 @@ class FileStorage:
         return self.__objets
 
     def new(self, obj):
-        obj_key = "{}.{}".format(obj.__class__.name, obj.id)
+        obj_key = "{}.{}".format(obj.__class__.__.name__, obj.id)
         self.__objetcs[obj_key] = obj 
 
     def save(self):
