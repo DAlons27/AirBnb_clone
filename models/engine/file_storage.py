@@ -14,7 +14,7 @@ class FileStorage:
     """Class where we serialize and wish to serialize Json files"""
     all_class = {"BaseModel": BaseModel, "User": User, "State": State, "City": City, "Review": Review, "Amenity": Amenity, "Place": Place}
     __objets = {}
-    __file_path = file.json
+    __file_path ='file.json'
     
     def __init__(self):
         """Initiation"""
