@@ -38,9 +38,16 @@ class FileStorage:
         
     def reload(self):
         """Deserialization"""
-        if os.stat(self.__file_path).st_size = 0:
-        #Terminar esta linea, solo falta esto
-            
+        try:
+            if os.stat(self.__file_path).st_size = 0:
+                raise EOFError()
+            with open(self.__file_path, 'r', encoding='UTF-8') as fp:
+                obj = json.load(fp)
+        except FileNotFounError:
+            pass
+        except EOFError:
+            pass
+        
     def path(self):
         """Returns the path of the Json file"""
         return self.__file_path
