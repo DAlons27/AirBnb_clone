@@ -25,8 +25,9 @@ class FileStorage:
         return self.__objets
 
     def new(self, obj):
+        """"Create a new object"""
         obj_key = "{}.{}".format(obj.__class__.__.name__, obj.id)
-        self.__objetcs[obj_key] = obj 
+        self.__objects[obj_key] = obj 
 
     def save(self):
         """Serialization"""
