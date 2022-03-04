@@ -1,8 +1,8 @@
 #!/usr/bin/python3                                                                                                               
-"""Clase usuario"""
+"""Class user"""
 from models.base_model import BaseModel
 
-class Usser(BaseModel):
+class User(BaseModel):
     """Data del usuario"""
     email = ""
     password = ""
