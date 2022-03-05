@@ -43,3 +43,19 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 | 7-` ` |  |
 | 8-` ` |  |
 | 9-` ` |  |
+    
+<p align="center">
+Diego Morey -
+<a href="https://github.com/DAlons27">
+        <img src="https://img.shields.io/badge/Diego-mainPage-blue">
+</a>
+</p>
+
+
+
+<p align="center">
+Edgar Condo -
+<a href="https://github.com/EdgaWill">
+        <img src="https://img.shields.io/badge/Edgar-mainPage-blue">
+</a>
+</p>
