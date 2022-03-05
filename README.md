@@ -9,37 +9,22 @@
 
 ### Concepts
 For this project, students are expected to look at these concepts:
+   
+* **[Python packages](https://intranet.hbtn.io/concepts/66)**
+* **[AirBnB clone ](https://intranet.hbtn.io/concepts/74)** 
 
-<div class="panel-body">
-      <p>
-        <em>For this project, students are expected to look at these concepts:</em>
-      </p>
-
-      <ul>
-          <li>
-            <a href="/concepts/66">Python packages</a>
-          </li>
-          <li>
-            <a href="/concepts/74">AirBnB clone</a>
-          </li>
-      </ul>
-</div>
-    
-* **Edgar** [Python packages](https://intranet.hbtn.io/concepts/66)
-* <a href="/concepts/66">Python packages</a>
-* AirBnB clone   
  
 ### Resources
 Read or watch:
     
-* Python abstract classes
-* cmd module
+* **[Python abstract classes](https://blog.teclado.com/python-abc-abstract-base-classes/)**
+* **[cmd module](https://docs.python.org/3.8/library/cmd.html)**
 * Packages concept page
-* uuid module
-* datetime
-* unittest module
-* args/kwargs
-* Python test cheatsheet
+* **[uuid module](https://docs.python.org/3.8/library/uuid.html)**
+* **[datetime](https://docs.python.org/3.8/library/datetime.html)**
+* **[unittest module](https://docs.python.org/3.8/library/unittest.html#module-unittest)**
+* **[args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)**
+* **[Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)**
 
 ### Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
