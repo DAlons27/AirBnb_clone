@@ -28,3 +28,18 @@ Read or watch:
 
 ### Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+    
+### List of comands you can use
+
+| File Name | Description |
+|--|--|
+| 0-` ` |  |
+| 1-` ` |  |
+| 2-` ` |  |
+| 3-` ` |  |
+| 4-` ` |  |
+| 5-` ` |  |
+| 6-` ` |  |
+| 7-` ` |  |
+| 8-` ` |  |
+| 9-` ` |  |
