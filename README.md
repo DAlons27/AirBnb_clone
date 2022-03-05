@@ -10,6 +10,21 @@
 ### Concepts
 For this project, students are expected to look at these concepts:
 
+<div class="panel-body">
+      <p>
+        <em>For this project, students are expected to look at these concepts:</em>
+      </p>
+
+      <ul>
+          <li>
+            <a href="/concepts/66">Python packages</a>
+          </li>
+          <li>
+            <a href="/concepts/74">AirBnB clone</a>
+          </li>
+      </ul>
+</div>
+    
 * **Edgar** [Python packages](https://intranet.hbtn.io/concepts/66)
 * <a href="/concepts/66">Python packages</a>
 * AirBnB clone   
