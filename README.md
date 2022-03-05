@@ -5,4 +5,25 @@
 
 <h2 align="center">
 
-# AirBnb_clone
+# AirBnB clone - The console 📚
+
+### Concepts
+For this project, students are expected to look at these concepts:
+
+* Python packages
+* AirBnB clone   
+ 
+### Resources
+Read or watch:
+    
+* Python abstract classes
+* cmd module
+* Packages concept page
+* uuid module
+* datetime
+* unittest module
+* args/kwargs
+* Python test cheatsheet
+
+### Learning Objectives
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
