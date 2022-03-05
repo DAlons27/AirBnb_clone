@@ -11,6 +11,7 @@
 For this project, students are expected to look at these concepts:
 
 * **Edgar** [Python packages](https://intranet.hbtn.io/concepts/66)
+* <a href="/concepts/66">Python packages</a>
 * AirBnB clone   
  
 ### Resources
