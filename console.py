@@ -6,7 +6,7 @@ from models import storage
 from models.engine.file_storage import FileStorage
 import json
 
-dictclass = storage.all_class
+dictclass = storage.all_classes
 
 class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb)'
