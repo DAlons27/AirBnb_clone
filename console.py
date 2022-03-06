@@ -9,6 +9,7 @@ import json
 dictclass = storage.all_classes
 
 class HBNBCommand(cmd.Cmd):
+    """Console HBNB"""
     prompt = '(hbnb)'
 
     def do_EOF(self, line):
