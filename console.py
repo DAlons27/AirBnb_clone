@@ -81,7 +81,25 @@ class HBNBCommand(cmd.Cmd):
            del storage.all()["{}.{}".format(args[0], args[1])]
            """Delete the item in the main dictionary"""
            storage.save()
-           
+
+    def do_all(self, line):
+        """Prints all string representation of all instances based or
+        not on the class name
+        """
+        args = line.split()
+        listobjs = []
+        if len(args) == 0:
+            for v in storage.all().values():
+                listobjs.append(str(v))
+            print(listobjs)
+        elif args[0] not in dictclass.keys():
+            print("** class doesn't exist **")
+        else:
+            for k, v in storage.all().items():
+                clid = k.split('.')
+                if clid[0] == args[0]:
+                    listobjs.append(str(v))
+            print(listobjs)
            
 
 
