@@ -101,14 +101,43 @@ class HBNBCommand(cmd.Cmd):
                     listobjs.append(str(v))
             print(listobjs)
            
-
-
-
-
-
-
-
-
+    def do_update(self, line):
+        """Updates an instance based on the class name and id by adding
+        or updating attribute
+        """
+        args = line.split()
+        if len(args) == 0:
+            print("** class name missing **")
+        elif args[0] not in dictclass.keys():
+            print("** class doesn't exist **")
+        elif len(args) == 1:
+            print("** instance id missing **")
+        elif "{}.{}".format(args[0], args[1]) not in storage.all().keys():
+            print("** no instance found **")
+        elif len(args) == 2:
+            print("** attribute name missing **")
+        elif len(args) == 3:
+            print("** value missing **")
+        else:
+            objU = storage.all()["{}.{}".format(args[0], args[1])]
+            args[3] = no_quotes(args[3])
+            q1 = (args[2] != 'id')
+            q2 = (args[2] != 'created_at')
+            q3 = (args[2] != 'updated_at')
+            if (q1 and q2 and q3):
+                if hasattr(objU, args[2]):
+                    t = type(getattr(objU, args[2]))
+                    setattr(objU, args[2], t(args[3]))
+                else:
+                    if is_integer(args[3]):
+                        setattr(objU, args[2], int(args[3]))
+                    elif is_float(args[3]):
+                        setattr(objU, args[2], float(args[3]))
+                    else:
+                        setattr(objU, args[2], args[3])
+                objU.save()
+            else:
+                print("** this attribute can't be updated **")
     
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
