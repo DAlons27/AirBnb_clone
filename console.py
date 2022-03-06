@@ -40,7 +40,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             for i in args:
                 if i in dictclass.keys():
-                    obj = dictclass[a]()
+                    obj = dictclass[i]()
                     obj.save()
                     print(obj.id)
                 else:
@@ -63,25 +63,25 @@ class HBNBCommand(cmd.Cmd):
             obj = storage.all()["{}.{}".format(args[0], args[1])]
             print(obj)
             
-    def destroy(self, line):
-       """Deletes an instance based on the class name and id
-       """
-       args = line.split()
-       if len(args) == 0:
-           print("** class name missing **")
-       elif args[0] not in dictclass.keys():
-           print("* class doesn't exist **")
-       elif len(args) == 1:
-           print("** instance id missing **")
-       elif "{}.{}".format(args[0], args[1]) not in storage.all().keys():
-           print("** no instance found **")
-       else:
-           obj = storage.all()["{}.{}".format(args[0], args[1])]
-           del(obj)
-           """Delete instance"""
-           del storage.all()["{}.{}".format(args[0], args[1])]
-           """Delete the item in the main dictionary"""
-           storage.save()
+    def do_destroy(self, line):
+        """Deletes an instance based on the class name and id
+        """
+        args = line.split()
+        if len(args) == 0:
+            print("** class name missing **")
+        elif args[0] not in dictclass.keys():
+            print("** class doesn't exist **")
+        elif len(args) == 1:
+            print("** instance id missing **")
+        elif "{}.{}".format(args[0], args[1]) not in storage.all().keys():
+            print("** no instance found **")
+        else:
+            obj = storage.all()["{}.{}".format(args[0], args[1])]
+            del(obj)
+            """deletes the instance"""
+            del storage.all()["{}.{}".format(args[0], args[1])]
+            """deletes the item in the main dictionary"""
+            storage.save()
 
     def do_all(self, line):
         """Prints all string representation of all instances based or
