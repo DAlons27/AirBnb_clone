@@ -4,6 +4,7 @@ import cmd
 import sys
 from models import storage
 from models.engine.file_storage import FileStorage
+import json
 
 dictclass = storage.all_class
 
