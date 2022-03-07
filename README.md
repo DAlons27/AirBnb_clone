@@ -7,6 +7,11 @@
 
 # AirBnB clone - The console 📚
 
+# Description
+    
+It is a command line interaction platform that has to provide a place for hosting.
+This is a start of the project where AirBnb Clone is created there is a shell that executes the commands.
+
 ### Concepts
 For this project, students are expected to look at these concepts:
    
@@ -33,16 +38,14 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 | File Name | Description |
 |--|--|
-| 0-` ` |  |
-| 1-` ` |  |
-| 2-` ` |  |
-| 3-` ` |  |
-| 4-` ` |  |
-| 5-` ` |  |
-| 6-` ` |  |
-| 7-` ` |  |
-| 8-` ` |  |
-| 9-` ` |  |
+| 0-`create` | creates a Basemodel instance and saves it to the JSON file. |
+| 1-`destroy` | Destroy is a universal widget method, i.e. we can use this method with any of the available widgets |
+| 2-`show` | The show function in the pyplot module of the matplotlib library is used to display all figures. |
+| 3-`all` | The all function returns True if all elements in the given iterable are true. If not, it returns False. |
+| 4-`quit and EOF` | Exit and EOF information that cannot be retrieved and ends |
+| 5-`update` | Updates an instance of the class according to its id location. |
+| 6-`help ` | Shows the commands that are used. |
+
     
 <p align="center">
 Diego Morey -
