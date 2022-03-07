@@ -2,6 +2,7 @@
 """
 Test Console
 """
+import unittest
 import uuid
 import models
 from models.base_model import BaseModel
